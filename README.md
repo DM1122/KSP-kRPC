@@ -8,11 +8,10 @@
 [![codecov](https://codecov.io/gh/DM1122/poetry-template/branch/main/graph/badge.svg?token=E2N1A55HGR)](https://codecov.io/gh/DM1122/poetry-template)
 
 
-<img src="img/poetry-logo.png" height="64">
+<img src="img/rocket.png" height="64">
 
-# Poetry Template
-A template for a poetry-managed repository.
-
+# KSP-kRPC
+This is a library of control scripts and experiments for use with the [kRPC](https://github.com/krpc/krpc) mod for [Kerbal Space Program](https://www.kerbalspaceprogram.com/).
 
 # Contribution
 Instructions for contributing to this project are shown here.
