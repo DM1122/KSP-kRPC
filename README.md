@@ -71,6 +71,12 @@ This section will take you through the procedure to take your development enviro
     
     Pre-commit's cache will be stored at `~/.cache/pre-commit` (this folder can grow very large).
 
+    The kRPC package requires setuptools 57.5.0 to install correctly. Setuptools cannot currently be version-locked in poetry, execpt in the beta 1.2 release (see [issue](https://github.com/python-poetry/poetry/issues/4511)). For now, you must run:
+    ```
+    poetry run pip install --upgrade setuptools==57.5.0
+    ```
+    To install the compatible version of setuptools for kRPC.
+
 1. Configure IDE interpreter
 
     It is recommended you use [VSCode](https://code.visualstudio.com/) as your integrated development environment (IDE). Configure your IDE to use the virtual environment poetry has created at `C:\Users\<USERNAME>\AppData\Local\pypoetry\Cache\virtualenvs` (you can also find it with the command `poetry show -v`).

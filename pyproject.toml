@@ -6,6 +6,9 @@ authors = ["DM1122"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
+krpc = "^0.4.8"
+control = "^0.9.1"
+sympy = "^1.10.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
