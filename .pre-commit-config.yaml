@@ -14,10 +14,12 @@ repos:
   rev: v1.4
   hooks:
     - id: docformatter
-      args: [--blank, --in-place, --recursive, --wrap-descriptions=88, --wrap-summaries=80]
+      args: [--blank, --in-place, --recursive, --wrap-descriptions=88, --wrap-summaries=80] # does not yet support toml config
 
-- repo: https://github.com/pycqa/pylint
-  rev: v2.13.5
+- repo: local
   hooks:
-  - id: pylint
-    additional_dependencies: [pytest]
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
