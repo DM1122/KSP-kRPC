@@ -16,13 +16,3 @@ def solve_eq(eq, symbol):
         soln = soln.args[0]
 
     return sy.Eq(symbol, soln)
-
-
-def L(f):
-    t, s = sy.symbols("t, s")
-    return sy.laplace_transform(f, t, s, noconds=True)
-
-
-def L_inv(F):
-    t, s = sy.Symbol("t, s")
-    return sy.inverse_laplace_transform(F, s, t)
