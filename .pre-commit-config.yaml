@@ -12,12 +12,20 @@ repos:
 - repo: https://github.com/myint/docformatter
   rev: v1.4
   hooks:
-    - id: docformatter
-      args: [--blank, --in-place, --recursive, --wrap-descriptions=88, --wrap-summaries=80] # does not yet support toml config
+  - id: docformatter
+    args: [--blank, --in-place, --recursive, --wrap-descriptions=88, --wrap-summaries=80] # does not yet support toml config
+
+# - repo: local # https://github.com/pre-commit/pre-commit-hooks/issues/157#issuecomment-866025405
+#   hooks:
+#   - id: system
+#     name: pylint
+#     entry: python -m pylint.__main__
+#     language: system
 
 - repo: local
   hooks:
-    - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
+  - id: pylint
+    name: pylint
+    entry: poetry run pylint
+    language: system
+    types: [python]
