@@ -131,16 +131,14 @@ pytest -v -m "not foo"
 Check out the pytest docs for more neat tricks.
 
 ## Pre-Commit ✅
-This project is configured to use [pre-commit](https://pre-commit.com/) hooks. A hook is a script that performs some operation on the repository before every commit. The pre-commit pipeline is as follows:
-
-1. [Isort](https://pycqa.github.io/isort/): Sorts imports, so you don't have to.
-1. [Black](https://black.readthedocs.io/en/stable/): The uncompromising code autoformatter.
-1. [Docformatter](https://github.com/myint/docformatter): A docstring autoformatter.
-1. [Pylint](https://github.com/pycqa/pylint): It's not just a linter that annoys you!
-
-Pre-commit will not let you push your commit until all hooks pass. This ensures only lint-free code is pushed to the repository. When a hook fails, they can be run manually to delint using:
+This project is configured to use [pre-commit](https://pre-commit.com/) hooks. A hook is a script that performs some operation on the repository before every commit. Pre-commit will not let you push your commit until all hooks pass. This ensures only lint-free code is pushed to the repository. When a hook fails, they can be run manually to delint using:
 ```
 pre-commit run --all-files
+```
+
+Hooks can be updated using:
+```
+pre-commit autoupdate
 ```
 
 ## Branches 🌿
