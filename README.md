@@ -75,7 +75,7 @@ This section will take you through the procedure to take your development enviro
     ```
     poetry run pip install --upgrade setuptools==57.5.0
     ```
-    To install the compatible version of setuptools for kRPC.
+    To install the compatible version of setuptools for kRPC. Poetry does not support version-pinning of `setuptools`, so this cannot be done in the `pyproject.toml` file.
 
 1. Configure IDE interpreter
 
