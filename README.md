@@ -131,7 +131,7 @@ pytest -v -m "not foo"
 Check out the pytest docs for more neat tricks.
 
 ## Pre-Commit ✅
-This project is configured to use [pre-commit](https://pre-commit.com/) hooks. A hook is a script that performs some operation on the repository before every commit. Pre-commit will not let you push your commit until all hooks pass. This ensures only lint-free code is pushed to the repository. When a hook fails, they can be run manually to delint using:
+This project is configured to use [pre-commit](https://pre-commit.com/) hooks. A hook is a script that performs some operation on the repository before every commit. Hooks are used to autoformat and lint code. Pre-commit will not let you push your commit until all hooks pass. When a hook fails, they can be run manually to delint using:
 ```
 pre-commit run --all-files
 ```

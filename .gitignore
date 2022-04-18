@@ -1,7 +1,8 @@
 .DS_Store
 .env
-.pytest_cache
 .mypy_cache
+.pytest_cache
+.venv
 .vscode
 __pycache__
 logs
@@ -9,4 +10,3 @@ output
 scrap.txt
 temp-plot.html
 tmp
-.venv
